@@ -1,0 +1,10 @@
+version: '3.5'
+services:
+  docktor:
+    image: matbabs/docktor
+    ports:
+      - 3030:80
+      - 4040:4040
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:rw
+      - /home:/home
