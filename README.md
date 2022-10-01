@@ -1,5 +1,3 @@
-
-
 <div align="center">
     <h1> Docktor</h1>
     <h2> Analyze your Dev environment with surgical precision </h2>
@@ -25,7 +23,6 @@ Especially Docker environments which are an obvious source of vulnerability.
 
 > **The objective is to have a simple, fast, lightweight and everywhere approach to ensure the security of our productions.**
 
-
 <div align="center">
 
 ### The Docktor Kit Composition
@@ -42,14 +39,13 @@ Especially Docker environments which are an obvious source of vulnerability.
 
 Docktor takes care of the remaining work thanks to its 3 main components:
 
-* **Sources**: are UIs to select the sources/artifacts/input folders that will be analyzed by the Scanners
-* **Scanners**: are external tools that perform the processing
-* **Vizualizer**: are UIs that are in charge of enhancing the data for the user
-
+- **Sources**: are UIs to select the sources/artifacts/input folders that will be analyzed by the Scanners
+- **Scanners**: are external tools that perform the processing
+- **Vizualizer**: are UIs that are in charge of enhancing the data for the user
 
 ```mermaid
 graph TD
-    A[Docktor Frontend] 
+    A[Docktor Frontend]
 
     B(SOURCE - Docker Images)
     C(SOURCE - File System)
@@ -89,13 +85,13 @@ graph TD
 
 ![](https://raw.githubusercontent.com/Matbabs/Docktor/main/assets/img/docker.png)
 
-* Trivy detects:
+- Trivy detects:
 
-  * Vulnerabilities
-    
-      * OS packages (Alpine, Red Hat Universal Base Image, Red Hat Enterprise Linux, CentOS, AlmaLinux, Rocky Linux, CBL-Mariner, Oracle Linux, Debian, Ubuntu, Amazon Linux, openSUSE Leap, SUSE Enterprise Linux, Photon OS and Distroless)
-      
-      * Language-specific packages (Bundler, Composer, Pipenv, Poetry, npm, yarn, Cargo, NuGet, Maven, and Go)
+  - Vulnerabilities
+
+    - OS packages (Alpine, Red Hat Universal Base Image, Red Hat Enterprise Linux, CentOS, AlmaLinux, Rocky Linux, CBL-Mariner, Oracle Linux, Debian, Ubuntu, Amazon Linux, openSUSE Leap, SUSE Enterprise Linux, Photon OS and Distroless)
+
+    - Language-specific packages (Bundler, Composer, Pipenv, Poetry, npm, yarn, Cargo, NuGet, Maven, and Go)
 
 <br>
 <br>
@@ -117,14 +113,13 @@ graph TD
 
 ![](https://raw.githubusercontent.com/Matbabs/Docktor/main/assets/img/file.png)
 
+- Trivy detects:
 
-* Trivy detects:
+  - Vulnerabilities
 
-  * Vulnerabilities
-    
-      * OS packages (Alpine, Red Hat Universal Base Image, Red Hat Enterprise Linux, CentOS, AlmaLinux, Rocky Linux, CBL-Mariner, Oracle Linux, Debian, Ubuntu, Amazon Linux, openSUSE Leap, SUSE Enterprise Linux, Photon OS and Distroless)
-      
-      * Language-specific packages (Bundler, Composer, Pipenv, Poetry, npm, yarn, Cargo, NuGet, Maven, and Go)
+    - OS packages (Alpine, Red Hat Universal Base Image, Red Hat Enterprise Linux, CentOS, AlmaLinux, Rocky Linux, CBL-Mariner, Oracle Linux, Debian, Ubuntu, Amazon Linux, openSUSE Leap, SUSE Enterprise Linux, Photon OS and Distroless)
+
+    - Language-specific packages (Bundler, Composer, Pipenv, Poetry, npm, yarn, Cargo, NuGet, Maven, and Go)
 
 <br>
 <br>
@@ -144,23 +139,21 @@ graph TD
 
 ### [SOURCE] - Config Files - Misconfigurations Analysis
 
-
 ![](https://raw.githubusercontent.com/Matbabs/Docktor/main/assets/img/conf.png)
 
-* Trivy detects:
+- Trivy detects:
 
-  * Misconfigurations
-      * Kubernetes
-      * Docker
-      * Terraform
-      * CloudFormation
-      * etc.
-    
-  * Secrets
-      * AWS access key
-      * GCP service account
-      * GitHub personal access token
-      * etc.
+  - Misconfigurations
+    - Kubernetes
+    - Docker
+    - Terraform
+    - CloudFormation
+    - etc.
+  - Secrets
+    - AWS access key
+    - GCP service account
+    - GitHub personal access token
+    - etc.
 
 <br>
 <br>
@@ -182,14 +175,13 @@ graph TD
 
 ![](https://raw.githubusercontent.com/Matbabs/Docktor/main/assets/img/repo.png)
 
+- Trivy detects:
 
-* Trivy detects:
+  - Vulnerabilities
 
-  * Vulnerabilities
-    
-      * OS packages (Alpine, Red Hat Universal Base Image, Red Hat Enterprise Linux, CentOS, AlmaLinux, Rocky Linux, CBL-Mariner, Oracle Linux, Debian, Ubuntu, Amazon Linux, openSUSE Leap, SUSE Enterprise Linux, Photon OS and Distroless)
-      
-      * Language-specific packages (Bundler, Composer, Pipenv, Poetry, npm, yarn, Cargo, NuGet, Maven, and Go)
+    - OS packages (Alpine, Red Hat Universal Base Image, Red Hat Enterprise Linux, CentOS, AlmaLinux, Rocky Linux, CBL-Mariner, Oracle Linux, Debian, Ubuntu, Amazon Linux, openSUSE Leap, SUSE Enterprise Linux, Photon OS and Distroless)
+
+    - Language-specific packages (Bundler, Composer, Pipenv, Poetry, npm, yarn, Cargo, NuGet, Maven, and Go)
 
 <br>
 <br>
@@ -240,12 +232,11 @@ docker run \
     -v /home:/home \
     docktor
 ```
+
 </details>
 
 <br>
 
-
 ### Access UI
 
-__Connect on: http://localhost:3030__
-
+**Connect on: http://localhost:3030**
