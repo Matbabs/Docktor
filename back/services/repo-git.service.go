@@ -5,7 +5,7 @@ import (
 	"os/exec"
 )
 
-const REPO_REPORT_FILE string = "./reports/repo.report.json"
+const REPO_REPORT_FILE string = ".repo.report.json"
 
 func ScanRemoteRepoGit(uri string) any {
 	var scan any

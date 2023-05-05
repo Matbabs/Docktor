@@ -6,7 +6,7 @@ import (
 	"strings"
 )
 
-const PATH_REPORT_FILE string = "./reports/path.report.json"
+const PATH_REPORT_FILE string = ".path.report.json"
 
 func CheckLocalPath(path string) []string {
 	var stdout []string

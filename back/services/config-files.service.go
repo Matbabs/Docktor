@@ -5,7 +5,7 @@ import (
 	"os/exec"
 )
 
-const CONFIG_REPORT_FILE string = "./reports/config.report.json"
+const CONFIG_REPORT_FILE string = ".config.report.json"
 
 func ScanLocalConfig(path string) any {
 	var scan any

@@ -4,6 +4,7 @@ FROM nginx:1.23.0-alpine
 # Install dependancies
 RUN apk add --update docker openrc go
 RUN curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -s -- -b /usr/local/bin v0.29.2
+RUN trivy i ubuntu
 
 # Build frontend outside & copy 
 COPY /front/dist /usr/share/nginx/html

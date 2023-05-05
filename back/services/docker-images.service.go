@@ -2,12 +2,13 @@ package services
 
 import (
 	"encoding/json"
+	"fmt"
 	"main/models"
 	"os/exec"
 	"strings"
 )
 
-const DOCKER_REPORT_FILE string = "./reports/docker.report.json"
+const DOCKER_REPORT_FILE string = ".docker.report.json"
 
 func GetLocalDockerImages() []models.DockerImage {
 	var dockerImages []models.DockerImage
@@ -24,7 +25,15 @@ func GetLocalDockerImages() []models.DockerImage {
 
 func ScanLocalDockerImage(image string) any {
 	var scan any
-	exec.Command("trivy", "i", "-f", "json", "-o", DOCKER_REPORT_FILE, image).Run()
+	fmt.Println(DOCKER_REPORT_FILE)
+	fmt.Println(image)
+	fmt.Println(exec.Command("trivy", "i", "-f", "json", "-o", DOCKER_REPORT_FILE, image))
+	out, err := exec.Command("trivy", "i", "-f", "json", "-o", DOCKER_REPORT_FILE, image).Output()
+	fmt.Println(out)
+	if err != nil {
+		fmt.Println("err")
+		fmt.Println(err.Error())
+	}
 	cmd, _ := exec.Command("cat", DOCKER_REPORT_FILE).Output()
 	json.Unmarshal(cmd, &scan)
 	return scan
