@@ -11,7 +11,7 @@
     "prettier": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+    "@sveltejs/vite-plugin-svelte": "^1.4.0",
     "@tsconfig/svelte": "^2.0.1",
     "prettier": "^2.7.1",
     "prettier-plugin-svelte": "^2.7.1",
@@ -21,11 +21,11 @@
     "svelte-navigator": "^3.1.6",
     "svelte-preprocess": "^4.9.8",
     "tslib": "^2.3.1",
-    "typescript": "^4.5.4",
-    "vite": "^2.9.9"
+    "typescript": "^4.5.4"
   },
   "dependencies": {
     "svelte-chartjs": "^1.1.4",
-    "svelte-markdown": "^0.2.2"
+    "svelte-markdown": "^0.2.2",
+    "vite": "^4.3.5"
   }
 }
