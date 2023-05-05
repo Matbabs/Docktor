@@ -224,13 +224,17 @@ docker-compose up
 ### Run with - Docker run
 
 ```
+docker pull matbabs/docktor
+```
+
+```
 docker run \
     -d \
     -p 3030:80 \
     -p 4040:4040 \
     -v "/var/run/docker.sock:/var/run/docker.sock:rw" \
     -v /home:/home \
-    docktor
+    matbabs/docktor
 ```
 
 </details>
