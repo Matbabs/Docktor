@@ -20,7 +20,7 @@ RUN rc-update add docker boot
 # Prepare start frontend & backend
 RUN echo "nginx -g 'daemon off;' &" >> custom-start.sh
 RUN echo "./main" >> custom-start.sh
-RUN chmod 755 custom-start.sh
+RUN chmod u+x custom-start.sh
 
 # Expose frontend & backend
 EXPOSE 3030 4040
